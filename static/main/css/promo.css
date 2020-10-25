@@ -1,0 +1,25 @@
+.promo-row {
+	height: 600px;
+	margin-bottom: 40px;
+}
+
+.promo-row .popup-gallery {
+	width: 400px;
+}
+
+.promo-row .left {
+    float: left;
+}
+
+.promo-row .right {
+    float: right;
+}
+
+.promo-row .center {
+    margin: 0 auto;
+}
+
+.promo-row img {
+	max-width: 400px;
+	max-height: 600px;
+}

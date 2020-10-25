@@ -1,0 +1,506 @@
+@font-face {
+    font-family: roboto-light; /* Имя шрифта */
+    src: url('../fonts/Roboto-Light.ttf'); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: roboto-bold; /* Имя шрифта */
+    src: url('../fonts/Roboto-Bold.ttf'); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: roboto-regular; /* Имя шрифта */
+    src: url('../fonts/Roboto-Regular.ttf'); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: roboto-medium; /* Имя шрифта */
+    src: url('../fonts/Roboto-Medium.ttf'); /* Путь к файлу со шрифтом */
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+html, body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'roboto-regular';
+	background-color: white;
+}
+
+.menu {
+	height: 35px;
+	background-color: #ca624b;
+	color: white;
+	margin-bottom: 28px;
+	width: 100%;
+	text-align: center;
+	position: relative;
+}
+
+.menu .menu-open {
+	float: left;
+}
+
+.menu .title {
+	padding-top: 4px;
+	display: inline-block;
+	font-size: 24px;
+	font-family: roboto-light;
+	line-height: 24px;
+}
+
+.menu .title a:visited,
+.menu .title a {
+	color: white;
+	text-decoration: none;
+}
+
+.menu .title img {
+	vertical-align: top;
+    display: inline-block;
+}
+
+.menu-open {
+	max-height: 35px;
+}
+
+.menu-open .menu-list {
+	display: none;
+}
+
+.menu-open.opened .menu-list {
+	display: block;
+	position: absolute;
+	top: 35px;
+	left: 0;
+	z-index: 1;
+}
+
+.menu-list {
+	width: 100%;
+	background-color: white;
+	padding-bottom: 16px;
+}
+
+.menu-list a {
+	width: 144px;
+	display: inline-block;
+	border-bottom: 1px solid #edc4bb;
+	text-decoration: none;
+	height: 32px;
+	line-height: 32px;
+	color: black;
+	font-size: 14px;
+}
+
+.content {
+	padding: 0 20px 0 20px;
+}
+
+h1 {
+	font-size: 32px;
+	font-family: roboto-regular;
+	color: #ca624b;
+    font-weight: normal;
+	margin-bottom: 28px;
+}
+
+.logo {
+	width: 100%;
+	text-align: center;
+	margin-top: -20px;
+}
+
+.description {
+	margin-bottom: 20px;
+	font-size: 12px;
+	font-family: roboto-light;
+}
+
+.index-phone {
+	font-family: roboto-bold;
+	font-size: 14px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.index-phone a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.index-phone:before {
+	content: url('../images/mobile/phone.png');
+	position: relative;
+    left: -3px;
+    top: 3px;
+}
+
+.quests-list {
+	margin-bottom: 35px;
+}
+
+.quests-list .quest {
+	background-color: #ca624b;
+	color: white;
+	margin-bottom: 12px;
+	border-radius: 5px;
+	padding: 15px;
+}
+
+.quests-list .quest-title {
+	font-family: roboto-regular;
+	font-size: 20px;
+	margin-bottom: 12px;
+}
+
+.quests-list .peoples-time {
+	font-family: roboto-light;
+	font-size: 12px;
+}
+
+.quests-list .quest.opened .peoples-time {
+	margin-bottom: 15px;
+}
+
+.quests-list .peoples {
+	margin-right: 20px;
+}
+
+.quests-list .peoples,
+.quests-list .time {
+	display: inline-block;
+}
+
+.quests-list .peoples-time img {
+	margin-right: 3px;
+	vertical-align: bottom;
+}
+
+.quests-list .quest-info-left {
+	display: inline-block;
+	width: 210px;
+}
+
+.quests-list .quest .quest-info-right {
+	display: inline-block;
+	width: 35px;
+    height: 35px;
+    float: right;
+	background-image: url('../images/mobile/arrow-down.png');
+}
+
+.quests-list .quest.opened .quest-info-right {
+	background-image: url('../images/mobile/arrow-up.png');
+}
+
+.quests-list .quest .full-info {
+	display: none;
+}
+
+.quests-list .full-info .quest-image {
+	text-align: center;
+}
+
+.quests-list .full-info .quest-image img {
+	max-width: 100%;
+    max-height: 100%;
+}
+
+.button-wrapper {
+	text-align: center;
+	margin-top: 25px;
+}
+
+.button {
+	padding: 16px 30px 16px 30px;
+	background-color: #ffffff;
+	color: #ca624b;
+	font-family: roboto-bold;
+	display: inline-block;
+	border: none;
+	font-size: 16px;
+	text-decoration: none;
+	border-radius: 3px;
+}
+
+.button.red {
+	background-color: #ca624b;
+	color: #ffffff;
+}
+
+.full-version {
+	text-align: center;
+	margin-bottom: 24px;
+	font-size: 13px;
+}
+
+.full-version a {
+	color: #ca624b;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+.footer {
+	background-color: #767676;
+	color: white;
+}
+
+.footer-title {
+	text-align: center;
+	font-family: roboto-medium;
+	font-size: 16px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.footer-title a,
+.footer-title a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+.footer-list {
+	text-align: center;
+}
+
+.footer-list a {
+	width: 33%;
+	color: white;
+	display: inline-block;
+	margin-bottom: 25px;
+}
+
+.footer-info {
+	overflow: auto;
+	margin: 0 auto;
+	width: 290px;
+}
+
+.footer-info .info {
+	text-align: center;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+
+.footer .social {
+    text-align: center;
+}
+
+.footer .social a {
+	display: inline-block;
+}
+
+.footer .social a > div {
+    float: left;
+    width: 30px;
+    height: 30px;
+}
+
+.footer .social .vk {
+    background-image: url('../images/socials/vk_white.png');
+	margin-right: 10px;
+}
+
+.footer .social .insta {
+    background-image: url('../images/socials/insta_white.png');
+	margin-right: 10px;
+}
+
+.footer .social .fb {
+    background-image: url('../images/socials/fb_white.png');
+    margin-right: 10px;
+}
+
+.footer .social .gp {
+    background-image: url('../images/socials/gp_white.png');
+}
+
+/** Contacts*/
+
+.branches {
+	margin-bottom: 50px;
+}
+
+.contact-main {
+	border: 1px solid #ca624b;
+	padding: 23px;
+	color: #777578;
+	margin-bottom: 12px;
+	border-radius: 3px;
+}
+
+.contact-main .contact-line:first-child {
+	margin-top: 0;
+}
+
+.contact-line {
+	height: 30px;
+	margin-top: 25px;
+	font-size: 16px;
+}
+
+.contact-line .contact-img {
+	float: left;
+	width: 23px;
+	margin-right: 10px;
+	text-align: center;
+}
+
+.contact-line .contact-img.mail {
+	padding-top: 3px;
+}
+
+.contact-line a,
+.contact-line a:visited {
+	color: #777578;
+	text-decoration: none;
+}
+
+.map {
+	margin-bottom: 20px;
+}
+
+.rules .number {
+	vertical-align: baseline;
+	color: #ca624b;
+	font-size: 36px;
+	font-family: roboto-regular;
+	padding-right: 10px;
+}
+
+.rules {
+	border-collapse: collapse;
+}
+
+.rules tr {
+	border-top: 1px solid #dadada;
+}
+
+.rules tr:first-child {
+	border: none;
+}
+
+.rules td {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.rules tr:first-child td {
+	padding-top: 0;
+}
+
+
+/* cards */
+
+.cards-content {
+	font-size: 16px;
+	font-family: roboto-light;
+	color: #505050;
+}
+
+.cards-description {
+	margin-bottom: 30px;
+}
+
+.cards-img {
+	width: 100%;
+	text-align: center;
+}
+
+.cards-img img {
+	max-height: 100%;
+	max-width: 100%;
+	margin-bottom: 30px;
+}
+
+.red-title {
+	text-align: center;
+	font-size: 24px;
+	font-family: roboto-medium;
+	color: #ca624b;
+	margin-bottom: 25px;
+}
+
+div.order-button {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+div.form .row {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+div.form .row div {
+    width: 50px;
+    height: 35px;
+    display: inline-block;
+    line-height: 35px;
+    vertical-align: middle;
+}
+
+div.form .row.name div{
+    background-image: url('../images/input/input_name.png');
+}
+
+div.form .row.phone div{
+    background-image: url('../images/input/input_phone.png');
+}
+
+div.form input {
+    height: 31px;
+    border-radius: 0 9px 9px 0;
+    outline: 0;
+    border: 1px solid #b5b5b5;
+    display: inline-block;
+    line-height: 31px;
+    padding-left: 5px;
+}
+
+#card-form input {
+	width: 70%;
+	max-width: 370px;
+}
+
+.cards-order-notification {
+	max-width: 420px;
+	margin: 0 auto;
+	font-family: 'roboto-regular';
+	font-size: 16px;
+	margin-bottom: 40px;
+}
+
+.square-logo{
+	width: 200px;
+	height: 180px;
+	border-radius: 6px;
+	background-color: #ca624b;
+	margin: 10px auto;
+	padding-top: 10px;
+}
+
+a .square-logo h3, .square-logo h3:visited, .square-logo h3:active,a .square-logo h3:link{
+	text-decoration: none;
+}
+
+.square-logo h3{
+	color: white;
+	text-align: center;
+	margin-top: 5px;
+	font-weight:100;
+	font-size: 22px;
+}
+.square-logo-img{
+	text-align: center;
+}
+.content-quests{
+	display: none;
+}

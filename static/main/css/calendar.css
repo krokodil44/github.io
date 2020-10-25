@@ -1,0 +1,23 @@
+.calendar-wrapper {
+	text-align: center;
+}
+
+.calendar {
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+.calendar .nav {
+	cursor: pointer;
+}
+
+.calendar .nav.disabled {
+	color: grey;
+}
+
+.calendar .inline {
+	display: inline-block;
+	font-family: 'roboto-regular';
+	font-size: 30px;
+	vertical-align: bottom;
+}

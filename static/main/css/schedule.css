@@ -1,0 +1,65 @@
+.quests-schedule .quest {
+	width: 200px;
+	font-weight: bold;
+	vertical-align: top;
+    margin-top: 34px;
+}
+
+.quests-schedule .quest-schedule {
+	margin-bottom: 15px;
+}
+
+.quests-schedule a.button {
+	font-size: 8pt;
+	color: #ca624b;
+	background-color: white;
+	border: 1px solid #ca624b;
+	width: 130px;
+    text-align: center;
+    display: block;
+}
+
+.quests-schedule a.button:hover {
+	color: white;
+	background-color: #ca624b;
+	border: none;
+}
+
+.quests-schedule .quest,
+.quests-schedule .schedule{
+	display: inline-block;
+}
+
+.quests-schedule .schedule{
+	background-color: #f7f7f7;
+	border-radius: 15px;
+	padding: 0 10px;
+}
+
+.quests-schedule .schedule .time-cost {
+	display: inline-block;
+	margin: 10px 8px 10px 8px;
+}
+
+.quests-schedule .time {
+	text-align: center;
+    margin-bottom: 5px;
+}
+
+.quests-schedule .cost {
+	background-color: #e3e3e3;
+	border-radius: 10px;
+	padding: 5px 15px;
+	cursor: pointer;
+}
+
+.quests-schedule .cost.disabled {
+	background-color: #F3F3F3;
+	color: #808080;
+}
+
+.quests-schedule .cost.selected {
+	background-color: #f7f7f7;
+	border: 1px solid #e3e3e3;
+	padding: 4px 14px;
+}

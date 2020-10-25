@@ -1,0 +1,916 @@
+@font-face {
+    font-family: roboto-light; /* Имя шрифта */
+    src: url('../fonts/Roboto-Light.ttf'); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: roboto-bold; /* Имя шрифта */
+    src: url('../fonts/Roboto-Bold.ttf'); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: roboto-regular; /* Имя шрифта */
+    src: url('../fonts/Roboto-Regular.ttf'); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: roboto-medium; /* Имя шрифта */
+    src: url('../fonts/Roboto-Medium.ttf'); /* Путь к файлу со шрифтом */
+}
+
+.hidden {
+    display: none;
+}
+
+.red-font {
+    color: #ca624b;
+}
+
+.grey-font {
+    color: #767676;
+}
+
+body {
+	font-family: Arial;
+	font-size: 24px;
+	font-style: italic;
+	float: none;
+	font-weight: bold;
+	color: #767676;
+	position: relative;
+}
+
+body > div.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*** HEADER ***/
+body > div.wrapper .header {
+    height: 300px;
+}
+
+body > div.wrapper .header-img {
+    top: -1px;
+    background-image: url('../images/header_bg.png');
+    height: 198px;
+    position: absolute;
+    width: 1200px;
+    z-index: -1;
+}
+
+body div.header-info {
+    width: 80%;
+    margin: 0 auto;
+    height: 130px;
+    z-index: 10;
+}
+
+body div.header-info .brain {
+	float: left;
+	width: 130px;
+	margin-top: 5px;
+}
+
+body div.header-info .title {
+	float: left;
+	width: auto;
+	font-family: 'roboto-bold';
+}
+
+body div.header-info .contacts {
+	float: right;
+	position: relative;
+	margin-top: 45px;
+	color: #FFF;
+	margin-right: 70px;
+}
+body .header-info .contacts .phone {
+	text-align: center;
+}
+
+body div.header-info .brain img {
+    height: 116px;
+}
+
+body div.header-info .title {
+	font-size: 36pt;
+	color: #000;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 110px;
+	float: left;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: 70px;
+}
+
+body div.header-info .contacts img {
+	width: 24px;
+	height: 24px;
+}
+
+body div.header-info .contacts img.fb {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+body div.header-info .contacts img.insta {
+	margin-right: 10px;
+}
+
+body div.header-info .contacts .phone {
+    color: #ca624b;
+    font-size: 17pt;
+    font-family: 'roboto-bold';
+}
+
+body div.header-info .contacts .phone img {
+    width: 26px;
+    vertical-align: middle;
+}
+
+div.header-menu {
+    height: 145px;
+    width: 100%;
+}
+
+/*** CIRCLES ***/
+div.header-menu > div {
+	width: 140px;
+	height: 114px;
+	float: left;
+	font-family: 'roboto-regular';
+	font-size: 12pt;
+	text-align: center;
+	cursor: pointer;
+	margin-right: 69px;
+	margin-left: 2px;
+	
+}
+
+div.header-menu > div:hover a,
+div.header-menu > div:hover {
+	color: #900;
+}
+
+div.header-menu a {
+    text-decoration: none;
+    color: black;
+}
+
+div.header-menu .circle {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+div.header-menu .rules {
+    margin-left: 100px;
+}
+
+div.header-menu .quests{
+	padding-top: 22px;
+}
+div.header-menu .franchise {
+	padding-top: 22px;
+}
+
+div.header-menu .pryatki {
+	padding-top: 38px;
+}
+
+div.header-menu .promo {
+	padding-top: 22px;
+}
+div.header-menu .cards {
+	padding-top: 35px;
+}
+
+div.header-menu .rules-img {
+    background-image: url('../images/circles_80/rules_circle.png');
+}
+
+div.header-menu > div:hover .rules-img {
+    background-image: url('../images/circles_80/rules_circle_selected.png');
+}
+
+div.header-menu .quests-img {
+    background-image: url('../images/circles_80/quests_circle.png');
+}
+
+div.header-menu > div:hover .quests-img {
+    background-image: url('../images/circles_80/quests_circle_selected.png');
+}
+
+div.header-menu .cards-img {
+    background-image: url('../images/circles_80/card_circle.png');
+}
+
+div.header-menu > div:hover .cards-img {
+    background-image: url('../images/circles_80/card_circle_selected.png');
+}
+
+div.header-menu .cards {
+	position: relative;
+} 
+
+div.header-menu .promo-img {
+    background-image: url('../images/circles_80/promo_circle.png');
+}
+
+div.header-menu > div:hover .promo-img {
+    background-image: url('../images/circles_80/promo_circle_selected.png');
+}
+
+div.header-menu .contacts-img {
+    background-image: url('../images/circles_80/contact_circle.png');
+}
+
+div.header-menu > div:hover .contacts-img {
+    background-image: url('../images/circles_80/contact_circle_selected.png');
+}
+
+
+
+/*** CONTENT ***/
+body > div.wrapper .content {
+	width: 800px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+
+/*** FOOTER ***/
+body .wrapper > div.footer {
+    background-color: #767676;
+    height: 150px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+body .wrapper > div.footer .footer-container {
+	width: 1000px;
+	color: #f7f7f7;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	height: 140px;
+}
+
+div.footer .brain {
+	height: 100px;
+	width: 156px;
+	background-image: url('../images/logo_inverse.png');
+	float: left;
+}
+
+div.footer .brain {
+	float: left;
+	margin-top: 28px;
+	margin-left: 30px;
+	margin-right: 18px;
+	
+}
+
+div.footer .info {
+	margin-left: auto;
+	padding-top: 10px;
+	margin-right: auto;
+	float: none;
+	height:auto;
+}
+
+div.footer .menu {
+	border-top: 2px solid #f7f7f7;
+	border-bottom: 2px solid #f7f7f7;
+	font-size: 16pt;
+	text-justify: auto;
+	font-family: roboto-regular;
+	height: 32px;
+	float: left;
+	text-align: center;
+	margin-top: 20px;
+	text-decoration: none;
+	width: inherit;
+	
+}
+
+div.footer .menu .item {
+	float: left;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 28px;
+	margin-right: 28px;
+}
+
+div.footer .menu .item a:visited,
+div.footer .menu .item a {
+    text-decoration: none;
+    color: #f7f7f7;
+}
+
+div.footer .menu .item:first-child {
+    margin-left: 9px;
+    margin-right: 10px;
+}
+
+div.footer .menu .item:last-child {
+    margin-left: 10px;
+    margin-right: 9px;
+}
+
+
+div.footer .last-info {
+	margin-top: 10px;
+	position: relative;
+	float: left;
+	clip: rect(auto,auto,auto,auto);
+}
+
+
+div.footer .copyright a,
+div.footer .copyright a:hover,
+div.footer .copyright a:visited {
+    color: #f7f7f7;
+}
+
+
+/*** INDEX ***/
+h1 {
+    text-align: left;
+    font-family: 'roboto-regular';
+    font-size: 16pt;
+}
+
+div.i-description {
+	text-align: justify;
+	margin: 40px auto;
+	width: 800px;
+	font-size: 12pt;
+	color: #666666;
+}
+div.i-description1 {
+	text-align: center;
+	border: #C00;
+	border-width: thin;
+	margin: 10px auto;
+	width: 200px;
+	font-size: 14pt;
+	color: #cc6633;
+	vertical-align: middle;
+	
+}
+div.description2 {
+	width: 200px;
+	height:30px;
+    background-image: url('../images/zakaz.gif');	
+}
+div.description2:hover {
+    background-image: url('../images/zakaz_select.gif');
+	
+}
+.quests {
+	height: auto;
+}
+
+.quest {
+	position: relative;
+	cursor: pointer;
+	display: block;
+	text-decoration: none;
+	float: left;
+}
+
+.quest.left {
+    float: left;
+}
+
+.quest.right {
+	float: left;
+	position: relative;
+}
+
+.quest.center {
+    margin: 0 auto;
+}
+
+.quest .quest-title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    font-size: 21pt;
+    font-family: 'roboto-medium';
+    text-align: center;
+    border-top: 1px solid #cacaca;
+    border-left: 1px solid #cacaca;
+    border-right: 1px solid #cacaca;
+    color: #000;
+    text-decoration: none;
+}
+
+.quest a,
+.quest a:visited,
+.quest a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.quest .quest-info {
+	position: absolute;
+	bottom: 40px;
+	color: white;
+	left: 76px;
+	border: 0;
+}
+
+.quest .quest-info .quest-info-peoples {
+    width: 90px;
+}
+
+.quest .quest-info .quest-info-peoples .peoples {
+    text-align: center;
+}
+
+.quest .quest-info .quest-info-peoples .img-peoples {
+    height: 13px;
+    width: 59px;
+    margin: 0 auto;
+    line-height: 0;
+}
+
+.quest .quest-info .quest-info-time {
+    width: 90px;
+}
+
+.quest .quest-info .quest-info-time .time{
+    text-align: center;
+}
+
+.quest .quest-info .quest-info-time .img-time {
+    height: 13px;
+    width: 13px;
+    margin: 0 auto;
+    line-height: 0;
+}
+
+.quest .quest-info .quest-info-phone .img-loc-phone {
+    float: left;
+    height: 30px;
+    width: 28px;
+    margin: 0 auto;
+}
+
+.quest .quest-info .quest-info-phone .location-phone {
+    float: right;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.quest .quest-img {
+    position: relative;
+    height: 286px;
+}
+
+
+.quest .promo-img {
+	position: absolute;
+}
+
+.quest .img-select {
+    display: none;
+}
+
+.quest:hover .img-select {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0.7;
+    background-color: #ca624b;
+    display: block;
+}
+
+.quest.soon:hover .img-select,
+.quest.soon .img-select {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0.7;
+    background-color: #b4b1b6;
+    display: block;
+}
+
+.quest .img-select .message {
+    margin: 100px auto;
+    width: 160px;
+    text-align: center;
+    padding: 5px;
+    color: #ffffff;
+    border: 2px solid #f7f7f7;
+}
+
+.go-to-order {
+    text-align: center;
+    height: 60px;
+}
+
+/*** BUTTON ***/
+a.button {
+    padding: 10px 20px 10px 20px;
+    font-size: 20pt;
+    font-family: 'roboto-regular';
+    background-color: #ca624b;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a.button.small {
+	padding: 5px 10px 5px 10px;
+    font-size: 12pt;
+}
+
+/*** RULES ***/
+div.rules .row {
+    height: 186px;
+}
+
+div.rules .rule {
+    width: 46%;
+    margin-bottom: 20px;
+}
+
+div.rules .rule:first-child {
+    float: left;
+}
+
+div.rules .rule:last-child {
+    float: right;
+}
+
+div.rules .rule.center {
+    float: none;
+    margin: 0 auto;
+}
+
+div.rules .rule .rule-img,
+div.rules .rule .rule-text {
+    float: left;
+}
+
+div.rules .rule .rule-img {
+    margin-right: 20px;
+}
+
+div.rules .rule .rule-text {
+    width: 67%;
+}
+
+div.rules .rule .title {
+    font-family: 'roboto-medium';
+    font-size: 16pt;
+}
+
+div.rules .rule .text {
+    font-family: 'roboto-light';
+    font-size: 13pt;
+}
+
+/*** CARDS ***/
+div.card-img {
+    margin: 0 auto;
+    text-align: center;
+}
+
+div.red-title {
+    font-family: 'roboto-medium';
+    font-size: 20pt;
+    color: #ca624b;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+div.order-button {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+div.form .row {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+div.form .row div {
+    width: 50px;
+    height: 35px;
+    display: inline-block;
+    line-height: 35px;
+    vertical-align: middle;
+}
+
+div.form .row.name div{
+    background-image: url('../images/input/input_name.png');
+}
+
+div.form .row.phone div{
+    background-image: url('../images/input/input_phone.png');
+}
+
+div.form input {
+    height: 31px;
+    border-radius: 0 9px 9px 0;
+    outline: 0;
+    border: 1px solid #b5b5b5;
+    display: inline-block;
+    line-height: 31px;
+    padding-left: 5px;
+}
+
+#card-form input {
+	width: 370px;
+}
+
+.cards-order-notification {
+	width: 420px;
+	margin: 0 auto;
+	font-family: 'roboto-regular';
+	font-size: 16px;
+	margin-bottom: 40px;
+}
+
+/*** QUESTS ***/
+div.anchor-to-order {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+div.quests-description div.quest-description {
+    margin-bottom: 50px;
+}
+
+div.quests-description div.quest-description:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+div.quests-description .description,
+div.quests-description .gallery {
+    width: 480px;
+}
+
+div.quests-description .even .description,
+div.quests-description .odd .gallery {
+    float: left;
+}
+
+div.quests-description .odd .description,
+div.quests-description .even .gallery {
+    float: right
+}
+
+div.quest-description .description .title {
+    font-size: 38px;
+    font-family: 'roboto-medium';
+    margin-bottom: 25px;
+}
+
+div.quest-description .quest-info > div {
+    display: inline-block;
+}
+
+div.quest-description .quest-info .quest-info-peoples {
+    margin-right: 30px;
+}
+
+div.quest-description .quest-info .peoples {
+    text-align: center;
+	margin-top: 3px;
+    margin-bottom: 17px;
+}
+
+div.quests-description .quest-address-phone {
+	vertical-align: top;
+	margin-left: 30px;
+}
+
+div.quests-description .quest-address-phone .quest-address {
+	margin-bottom: 15px;
+}
+
+div.quests-description .quest-address-phone img {
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+div.quest-description .quest-info .time {
+	margin-top: 3px;
+    margin-bottom: 17px;
+}
+
+div.quest-description .quest-info .quest-info-time {
+    text-align: center;
+}
+
+div.quest-description .description .main-description {
+    font-family: 'roboto-light';
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 17px;
+}
+
+.quest-description .quest-promo {
+	font-family: 'roboto-light';
+    font-size: 20px;
+    line-height: 1.2;
+	border: 4px dashed #ca624b;
+    padding: 5px 10px;
+	margin-top: 20px;
+}
+
+div.gallery .main-image {
+    height: 361px;
+    margin-bottom: 20px;
+}
+
+div.gallery .previews {
+    text-align: center;
+}
+
+div.gallery .previews a {
+    width: 140px;
+    display: inline-block;
+}
+
+div.gallery .previews a:first-child {
+    float: left;
+}
+
+div.gallery .previews a:last-child {
+    float: right;
+}
+
+div.gallery img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.select-quest .order-quest {
+    display: inline-block;
+    font-family: 'roboto-medium';
+    font-size: 20px;
+    background-color: white;
+    color: #ca624b;
+    border: 1px solid #ca624b;
+    padding: 3px;
+    width: 200px;
+    text-align: center;
+}
+
+.select-quest .order-quest.current {
+    color: white;
+    background-color: #ca624b;
+    border: 1px solid #ca624b;
+}
+
+.select-quest .order-quest:hover {
+    cursor: pointer;
+}
+
+.select-quest .order-quest.wide {
+	width: 420px;
+}
+
+/*** datepicker ***/
+div#datepicker {
+    margin-bottom: 30px;
+}
+
+/*** dialog ***/
+.ui-dialog {
+    background-color: white;
+    border: 1px solid #ca624b;
+    border-radius: 5px;
+}
+
+.time-money .row .clock {
+    width: 25px;
+}
+
+.time-money .row {
+    margin-bottom: 10px;
+}
+
+.time-money .row:last-child {
+    margin-bottom: 0px;
+}
+
+.time-money .choice-time .row:hover {
+    cursor: pointer;
+}
+
+.time-money .choice-time .row.disabled,
+.time-money .choice-time .row.disabled:hover {
+    color: grey;
+    cursor: default;
+}
+
+.time-money .row > div {
+    display: inline-block;
+    text-align: center;
+}
+
+.time-money .choice-time .row:hover > div{
+    text-decoration: underline;
+}
+
+.time-money .choice-time .row.disabled:hover > div{
+    text-decoration: none;
+}
+
+.time-money .row > div:first-child {
+    width: 90px;
+}
+
+.ui-widget-overlay.ui-front {
+    background-color: rgba(165, 165, 165, 0.38);
+}
+
+.ui-state-default .ui-icon {
+    background-image: url("../images/close.png");
+    width: 16px;
+    height: 16px;
+}
+
+.confirm {
+    text-align: center;
+    font-family: 'roboto-regular';
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.fields .row {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.fields .row div.input {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.fields .row div.input img {
+    display: block;
+    float: left;
+}
+
+.fields .row div.input input{
+    height: 31px;
+    border-radius: 0 9px 9px 0;
+    outline: 0;
+    border: 1px solid #b5b5b5;
+    display: block;
+    float: left;
+    line-height: 31px;
+    padding-left: 5px;
+    width: 290px;
+}
+
+/* FRANCHISE + CARDS */
+.cards-content,
+.franchise-content {
+	width: 100%;
+	overflow: auto;
+	font-family: 'roboto-light';
+}
+
+.cards-content .cards-img,
+.cards-text-wrapper,
+.franchise-content .franchise-img,
+.franchise-text-wrapper {
+	width: 50%;
+}
+
+.cards-text-wrapper,
+.franchise-text-wrapper {
+	float: left;
+}
+
+.cards-text,
+.franchise-text {
+	padding-right: 30px;
+}
+
+.cards-content .cards-img,
+.franchise-content .franchise-img {
+	float: right;
+}
+
+.franchise-content .franchise-email {
+	color: #0099cc;
+}
