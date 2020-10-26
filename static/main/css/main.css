@@ -36,7 +36,7 @@ body {
 	font-style: italic;
 	float: none;
 	font-weight: bold;
-	color: #767676;
+	color: #3FB0ED;
 	position: relative;
 }
 
@@ -60,15 +60,18 @@ body > div.wrapper .header-img {
 }
 
 body div.header-info {
-    width: 80%;
-    margin: 0 auto;
-    height: 130px;
-    z-index: 10;
+	width: 80%;
+	margin: 0 auto;
+	height: 130px;
+	z-index: 10;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
 }
 
 body div.header-info .brain {
 	float: left;
-	width: 130px;
 	margin-top: 5px;
 }
 
@@ -82,27 +85,30 @@ body div.header-info .contacts {
 	float: right;
 	position: relative;
 	margin-top: 45px;
-	color: #FFF;
+	color: #ff7c00;
 	margin-right: 70px;
+	margin-left: 10px;
 }
 body .header-info .contacts .phone {
 	text-align: center;
 }
 
 body div.header-info .brain img {
-    height: 116px;
+
 }
 
 body div.header-info .title {
-	font-size: 36pt;
-	color: #000;
+	font-size: 100px;
+	color: #ff7c00;
 	text-align: center;
 	vertical-align: middle;
 	line-height: 110px;
 	float: left;
 	margin-right: auto;
 	margin-bottom: auto;
-	margin-left: 70px;
+	margin-left: 150px;
+	font-family: "Comic Sans MS", cursive;
+	margin-top: 20px;
 }
 
 body div.header-info .contacts img {
@@ -131,8 +137,7 @@ body div.header-info .contacts .phone img {
 }
 
 div.header-menu {
-    height: 145px;
-    width: 100%;
+	width: 100%;
 }
 
 /*** CIRCLES ***/
@@ -151,7 +156,7 @@ div.header-menu > div {
 
 div.header-menu > div:hover a,
 div.header-menu > div:hover {
-	color: #900;
+	color: #ff7c00;
 }
 
 div.header-menu a {
@@ -188,27 +193,27 @@ div.header-menu .cards {
 }
 
 div.header-menu .rules-img {
-    background-image: url('../images/circles_80/rules_circle.png');
+	background-image: url(../images/circles_80/about_circle.png);
 }
 
 div.header-menu > div:hover .rules-img {
-    background-image: url('../images/circles_80/rules_circle_selected.png');
+	background-image: url(../images/circles_80/about_circle_selected.png);
 }
 
 div.header-menu .quests-img {
-    background-image: url('../images/circles_80/quests_circle.png');
+	background-image: url(../images/circles_80/servises_circle.png);
 }
 
 div.header-menu > div:hover .quests-img {
-    background-image: url('../images/circles_80/quests_circle_selected.png');
+	background-image: url(../images/circles_80/servises_circle_selected.png);
 }
 
 div.header-menu .cards-img {
-    background-image: url('../images/circles_80/card_circle.png');
+	background-image: url(../images/circles_80/terms_circle.png);
 }
 
 div.header-menu > div:hover .cards-img {
-    background-image: url('../images/circles_80/card_circle_selected.png');
+	background-image: url(../images/circles_80/terms_circle_selected.png);
 }
 
 div.header-menu .cards {
@@ -216,43 +221,44 @@ div.header-menu .cards {
 } 
 
 div.header-menu .promo-img {
-    background-image: url('../images/circles_80/promo_circle.png');
+	background-image: url(../images/circles_80/price_circle.png);
 }
 
 div.header-menu > div:hover .promo-img {
-    background-image: url('../images/circles_80/promo_circle_selected.png');
+	background-image: url(../images/circles_80/price_circle_selected.png);
 }
 
 div.header-menu .contacts-img {
-    background-image: url('../images/circles_80/contact_circle.png');
+	background-image: url(../images/circles_80/guarantee_circle.png);
 }
 
 div.header-menu > div:hover .contacts-img {
-    background-image: url('../images/circles_80/contact_circle_selected.png');
+	background-image: url(../images/circles_80/guarantee_circle_selected.png);
 }
 
 
 
 /*** CONTENT ***/
 body > div.wrapper .content {
-	width: 800px;
+	width: 1200px;
 	margin-top: 0;
 	margin-right: auto;
 	margin-bottom: 0;
 	margin-left: auto;
+	text-align: center;
 }
 
 /*** FOOTER ***/
 body .wrapper > div.footer {
-    background-color: #767676;
-    height: 150px;
-    width: 100%;
-    margin-top: 20px;
+	background-color: #5fbdce;
+	height: 150px;
+	width: 100%;
+	margin-top: 20px;
 }
 
 body .wrapper > div.footer .footer-container {
-	width: 1000px;
-	color: #f7f7f7;
+	width: 800px;
+	color: #ff7c00;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 10px;
@@ -269,8 +275,7 @@ div.footer .brain {
 div.footer .brain {
 	float: left;
 	margin-top: 28px;
-	margin-left: 30px;
-	margin-right: 18px;
+	margin-left: 40px;
 	
 }
 
@@ -291,9 +296,11 @@ div.footer .menu {
 	height: 32px;
 	float: left;
 	text-align: center;
-	margin-top: 20px;
 	text-decoration: none;
 	width: inherit;
+	margin-top: 10px;
+	margin-left: 40px;
+	margin-right: 0px;
 	
 }
 
@@ -887,6 +894,7 @@ div#datepicker {
 	width: 100%;
 	overflow: auto;
 	font-family: 'roboto-light';
+	margin-bottom: 20px;
 }
 
 .cards-content .cards-img,

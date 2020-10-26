@@ -35,16 +35,16 @@ h2 {
 }
 
 div.contactX1	{
-	margin-top: 25px;
-	vertical-align: bottom;
 	float: left;
 	font-size: 36px;
+	font-family: "Arial Black", Gadget, sans-serif;
 }
 div.contactXXX	{
 	margin-top: 30px;
 	vertical-align: bottom;
 	float: right;
 	margin-right: 145px;
+	margin-left: 10px;
 }
 
 div.contact-main p {
