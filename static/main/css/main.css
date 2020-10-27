@@ -38,6 +38,7 @@ body {
 	font-weight: bold;
 	color: #3FB0ED;
 	position: relative;
+	top: 2%;
 }
 
 body > div.wrapper {
@@ -106,9 +107,10 @@ body div.header-info .title {
 	float: left;
 	margin-right: auto;
 	margin-bottom: auto;
-	margin-left: 150px;
-	font-family: "Comic Sans MS", cursive;
+	margin-left: 180px;
+	font-family: "Arial Black", Gadget, sans-serif;
 	margin-top: 20px;
+	font-weight: bold;
 }
 
 body div.header-info .contacts img {
